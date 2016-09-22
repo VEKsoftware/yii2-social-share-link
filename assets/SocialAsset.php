@@ -11,8 +11,8 @@ use yii\web\AssetBundle;
 class SocialAsset extends AssetBundle
 {
     public $depends = [
-        'vek\assets\FontAwesomeAsset',
-        'vek\assets\BootstrapSocialAsset',
+        'veksharelinks\assets\FontAwesomeAsset',
+        'veksharelinks\assets\BootstrapSocialAsset',
         'ijackua\sharelinks\ShareLinksAssets'
     ];
 }
