@@ -1,0 +1,21 @@
+{
+  "name": "VEKsoftware/yii2-social-share-link",
+  "description": "Social networks share links buttons",
+  "type": "yii2-extension",
+  "keywords": ["yii2","extension","social","network","links","share", "buttons"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dolgikh Vladimir",
+      "email": "dr.bresilian@yandex.ru"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "veksharelinks\\": ""
+    }
+  }
+}
