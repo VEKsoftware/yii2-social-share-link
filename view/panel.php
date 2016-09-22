@@ -5,7 +5,7 @@
  * Date: 22.09.16
  * Time: 16:33
  */
-use veksharelinks\ShareLinks;
+use veksharelinks\ShareLinksWidget;
 use yii\helpers\Html;
 
 ?>
@@ -15,7 +15,7 @@ use yii\helpers\Html;
     <?php
     echo Html::a(
         '<i class="fa fa-facebook"></i>',
-        $this->context->shareUrl(ShareLinks::SOCIAL_FACEBOOK),
+        $this->context->shareUrl(ShareLinksWidget::SOCIAL_FACEBOOK),
         ['title' => 'Share to Facebook']
     ) ?>
     </div>
@@ -24,7 +24,7 @@ use yii\helpers\Html;
     <?php
     echo Html::a(
         '<i class="fa fa-twitter"></i>',
-        $this->context->shareUrl(ShareLinks::SOCIAL_TWITTER),
+        $this->context->shareUrl(ShareLinksWidget::SOCIAL_TWITTER),
         ['title' => 'Share to Twitter']
     ) ?>
     </div>
@@ -33,7 +33,7 @@ use yii\helpers\Html;
     <?php
     echo Html::a(
         '<i class="fa fa-linkedin"></i>',
-        $this->context->shareUrl(ShareLinks::SOCIAL_LINKEDIN),
+        $this->context->shareUrl(ShareLinksWidget::SOCIAL_LINKEDIN),
         ['title' => 'Share to LinkedIn']
     ) ?>
     </div>
@@ -42,7 +42,7 @@ use yii\helpers\Html;
     <?php
     echo Html::a(
         '<i class="fa fa-google"></i>',
-        $this->context->shareUrl(ShareLinks::SOCIAL_GPLUS),
+        $this->context->shareUrl(ShareLinksWidget::SOCIAL_GPLUS),
         ['title' => 'Share to Google Plus']
     ) ?>
     </div>
@@ -51,7 +51,7 @@ use yii\helpers\Html;
     <?php
     echo Html::a(
         '<i class="fa fa-vk"></i>',
-        $this->context->shareUrl(ShareLinks::SOCIAL_VKONTAKTE),
+        $this->context->shareUrl(ShareLinksWidget::SOCIAL_VKONTAKTE),
         ['title' => 'Share to Vkontakte']
     ) ?>
     </div>

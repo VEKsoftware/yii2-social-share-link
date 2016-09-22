@@ -11,7 +11,7 @@ namespace veksharelinks;
 use veksharelinks\assets\SocialAsset;
 use Yii;
 
-class ShareLinks extends \ijackua\sharelinks\ShareLinks
+class ShareLinksWidget extends \ijackua\sharelinks\ShareLinks
 {
     /**
      * {@inherit}
