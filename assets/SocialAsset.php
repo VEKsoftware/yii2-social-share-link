@@ -13,5 +13,6 @@ class SocialAsset extends AssetBundle
     public $depends = [
         'vek\assets\FontAwesomeAsset',
         'vek\assets\BootstrapSocialAsset',
+        'ijackua\sharelinks\ShareLinksAssets'
     ];
 }
