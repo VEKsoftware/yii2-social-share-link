@@ -10,6 +10,7 @@ namespace veksharelinks;
 
 use veksharelinks\assets\SocialAsset;
 use Yii;
+use yii\base\ErrorException;
 use yii\base\Widget;
 use yii\helpers\ArrayHelper;
 
@@ -90,6 +91,14 @@ class ShareLinksWidget extends Widget
     public $buttons = [];
 
     /**
+     * Мета-тэги для страницы, на которой отображается виджет.
+     * П.С мета-тэги необходимо размещать по адресу url
+     *
+     * @var array
+     */
+    public $metaTags = [];
+
+    /**
      * Название представления, которое отвечает за роль декоратора
      *
      * @var string
@@ -124,6 +133,7 @@ class ShareLinksWidget extends Widget
     {
         $js = '$("' . $this->linkSelector . '").yiiShareLinks();';
         $this->view->registerJs($js);
+        $this->registerMetaTags();
 
         return $this->render($this->decorator, ['buttons' => $this->processButtons()]);
     }
@@ -132,10 +142,16 @@ class ShareLinksWidget extends Widget
      * Формируем структуру для отображения
      *
      * @return array
+     *
+     * @throws \yii\base\ErrorException
      */
     protected function processButtons()
     {
         $buttons = $this->buttons;
+
+        if (empty($buttons)) {
+            throw new ErrorException('Отсутствуют социальные кнопки');
+        }
 
         return array_map(
             function ($value) {
@@ -168,5 +184,19 @@ class ShareLinksWidget extends Widget
             },
             $buttons
         );
+    }
+
+    /**
+     * Регистрируем мета-тэги
+     *
+     * @return void
+     */
+    protected function registerMetaTags()
+    {
+        $metaTags = $this->metaTags;
+
+        foreach ($metaTags as $key => $content) {
+            $this->view->registerMetaTag(['name' => $key, 'content' => $content], $key);
+        }
     }
 }
