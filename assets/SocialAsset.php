@@ -10,9 +10,17 @@ use yii\web\AssetBundle;
  */
 class SocialAsset extends AssetBundle
 {
+    public $publishOptions = [
+        'forceCopy' => true,
+        'linkAssets' => true,
+    ];
+    public $sourcePath = '@veksharelinks';
+    public $js = [
+        'js/social.js'
+    ];
     public $depends = [
         'veksharelinks\assets\FontAwesomeAsset',
         'veksharelinks\assets\BootstrapSocialAsset',
-        'ijackua\sharelinks\ShareLinksAssets'
+        'yii\web\JqueryAsset',
     ];
 }
