@@ -160,7 +160,7 @@ class ShareLinksWidget extends Widget
                         ' ',
                         ArrayHelper::merge(
                             ['fa'],
-                            [self::SOCIAL_NETWORKS_ICONS[$value['social_network']]]
+                            [self::SOCIAL_NETWORKS_ICONS[$socialNetwork]]
                         )
                     ),
                     'sharedLink' => self::SOCIAL_NETWORKS_SHARED_LINKS[$socialNetwork] . $url
