@@ -1,3 +1,6 @@
+/**
+ * @author https://github.com/iJackUA
+ */
 jQuery.fn.yiiShareLinks = function (override) {
 
     var overrideSettings = override || {};
@@ -32,7 +35,7 @@ jQuery.fn.yiiShareLinks = function (override) {
 
         jQuery(this).bind("click", function () {
             var name = settings.createnew ? "PopUpWindow" + index : "PopUpWindow";
-            winObj = window.open($(this).data("href"), name, parameters);
+            winObj = window.open($(this).data("social"), name, parameters);
             winObj.focus();
 
             return false;

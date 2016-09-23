@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "706c3ed153aa9cfa7f666d3800792e6d",
-    "content-hash": "9ee1e98d38c246f0def2fcb399e64f8c",
+    "hash": "87218a62fb6d561a8feb80215d49e6d5",
+    "content-hash": "1f80ac5d197e844bf495f75f361147c3",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -370,52 +370,6 @@
                 "html"
             ],
             "time": "2016-07-16 12:58:58"
-        },
-        {
-            "name": "ijackua/yii2-sharelinks-widget",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/iJackUA/yii2-sharelinks-widget.git",
-                "reference": "f808b06b844fd134f7a504cd88143a8f7939b33a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/iJackUA/yii2-sharelinks-widget/zipball/f808b06b844fd134f7a504cd88143a8f7939b33a",
-                "reference": "f808b06b844fd134f7a504cd88143a8f7939b33a",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "ijackua\\sharelinks\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Evgeniy Kuzminov",
-                    "email": "kyzminov@gmail.com",
-                    "homepage": "http://stdout.in"
-                }
-            ],
-            "description": "Yii2 widget for popular social networks 'share link' generation",
-            "homepage": "https://github.com/iJackUA/yii2-sharelinks-widget",
-            "keywords": [
-                "extension",
-                "network",
-                "share",
-                "social",
-                "widget",
-                "yii"
-            ],
-            "time": "2015-12-13 20:30:43"
         },
         {
             "name": "yiisoft/yii2",
