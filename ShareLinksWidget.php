@@ -217,7 +217,7 @@ class ShareLinksWidget extends Widget
         $path = parent::getViewPath();
 
         if ($this->decoratorPath !== null && is_string($this->decoratorPath) && strlen($this->decoratorPath) > 0) {
-            $path = rtrim($this->decoratorPath, '/') . DIRECTORY_SEPARATOR;
+            $path = rtrim($this->decoratorPath, '\/') . DIRECTORY_SEPARATOR;
         }
 
         return $path;
