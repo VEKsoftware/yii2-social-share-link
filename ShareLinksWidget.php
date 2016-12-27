@@ -113,6 +113,13 @@ class ShareLinksWidget extends Widget
     public $linkSelector = '.socialShareBlock i';
 
     /**
+     * Путь до папки декоратора
+     *
+     * @var null|string
+     */
+    public $decoratorPath = null;
+
+    /**
      * {@inherit}
      *
      * @return void
@@ -198,5 +205,21 @@ class ShareLinksWidget extends Widget
         foreach ($metaTags as $key => $content) {
             $this->view->registerMetaTag(['name' => $key, 'content' => $content], $key);
         }
+    }
+
+    /**
+     * {@inheritdoc}
+     *
+     * @return null|string
+     */
+    public function getViewPath()
+    {
+        $path = parent::getViewPath();
+
+        if ($this->decoratorPath !== null && is_string($this->decoratorPath)) {
+            $path = rtrim($this->decoratorPath, '/') . DIRECTORY_SEPARATOR;
+        }
+
+        return $path;
     }
 }
