@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "87218a62fb6d561a8feb80215d49e6d5",
-    "content-hash": "1f80ac5d197e844bf495f75f361147c3",
+    "hash": "c6bd777a315f51c0df67ed0e75f899c6",
+    "content-hash": "bc6533806e7ccbfd8c0e8da08bb0e91f",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -58,21 +58,21 @@
         },
         {
             "name": "bower-asset/bootstrap-social",
-            "version": "5.0.0",
+            "version": "5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lipis/bootstrap-social.git",
-                "reference": "90826fa078a9a13a679928a0439fc28cbe2706a6"
+                "reference": "8b7618556d386d3fecf4b37783e20f2090cb4fd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lipis/bootstrap-social/zipball/90826fa078a9a13a679928a0439fc28cbe2706a6",
-                "reference": "90826fa078a9a13a679928a0439fc28cbe2706a6",
+                "url": "https://api.github.com/repos/lipis/bootstrap-social/zipball/8b7618556d386d3fecf4b37783e20f2090cb4fd0",
+                "reference": "8b7618556d386d3fecf4b37783e20f2090cb4fd0",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/bootstrap": "~3",
-                "bower-asset/font-awesome": "~4.5"
+                "bower-asset/font-awesome": "~4.7"
             },
             "type": "bower-asset-library",
             "extra": {
@@ -93,16 +93,16 @@
         },
         {
             "name": "bower-asset/font-awesome",
-            "version": "v4.6.3",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FortAwesome/Font-Awesome.git",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e"
+                "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-                "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/a8386aae19e200ddb0f6845b5feeee5eb7013687",
+                "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687",
                 "shasum": ""
             },
             "type": "bower-asset-library",
@@ -373,16 +373,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.9",
+            "version": "2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133"
+                "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/2b75151ea60e1fd820046416eee2e89c3dda1133",
-                "reference": "2b75151ea60e1fd820046416eee2e89c3dda1133",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
+                "reference": "5bfcb7a6dfa9771e2248eb8c4448613330f343ff",
                 "shasum": ""
             },
             "require": {
@@ -463,7 +463,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2016-07-11 13:36:42"
+            "time": "2016-10-20 12:02:50"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -517,20 +517,23 @@
         },
         {
             "name": "yiisoft/yii2-composer",
-            "version": "2.0.4",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464"
+                "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/7452fd908a5023b8bb5ea1b123a174ca080de464",
-                "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
+                "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -560,7 +563,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2016-02-06 00:49:24"
+            "time": "2016-12-20 13:26:02"
         }
     ],
     "packages-dev": [],
